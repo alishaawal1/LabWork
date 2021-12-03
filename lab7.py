@@ -1,4 +1,4 @@
 #add odd numbers of first ten positive integers
-odd = [1,3,5,7,9]
+odd = range (1,10,2)
 sumA = sum (odd)
 print (sumA)
