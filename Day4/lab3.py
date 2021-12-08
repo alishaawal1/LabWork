@@ -5,14 +5,17 @@
 #And any other input of age should print "ERROR".
 age = int(input("Enter your age: "))
 gender = str(input("Enter your gender: "))
-while gender != 'Male' or 'male' or 'female' or 'Female':
-    if gender in ['Male','male'] and age>=20 and age<=40:
-        print ("he may work anywhere.")
-    if gender in ['Male','male'] and age>=40 and age<=60:
-        print ("he will work in urban areas only.")
-    if gender in ['Female','female']:
-        print ("she will work only in urban areas.")
-    else:
-        print ("ERROR.")
-        age >=100
-        break
+# while gender != 'Male' or 'male' or 'female' or 'Female':
+if gender in ['Male','male'] and age>=20 and age<=40:
+    print ("he may work anywhere.")
+    # break
+elif gender in ['Male','male'] and age>=40 and age<=60:
+    print ("he will work in urban areas only.")
+    # break
+elif gender in ['Female','female']:
+    print ("she will work only in urban areas.")
+    # break
+else:
+    print ("ERROR.")
+    # age >=100
+    # break
